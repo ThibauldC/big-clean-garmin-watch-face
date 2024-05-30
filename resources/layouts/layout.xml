@@ -1,8 +1,8 @@
 <layout id="WatchFace">
-    <label id="TimeLabel" x="center" y="center" font="Graphics.FONT_NUMBER_THAI_HOT" justification="Graphics.TEXT_JUSTIFY_CENTER" color="Graphics.COLOR_BLUE" />
-    <label id="DateLabel" x="center" y="65" font="Graphics.FONT_SYSTEM_TINY" justification="Graphics.TEXT_JUSTIFY_CENTER" color="Graphics.COLOR_BLUE" />
-    <label id="StepCountLabel" x="125" y="165" font="Graphics.FONT_SYSTEM_MEDIUM" justification="Graphics.TEXT_JUSTIFY_RIGHT" color="Graphics.COLOR_BLUE" />
-    <label id="FloorCountLabel" x="140" y="165" font="Graphics.FONT_SYSTEM_MEDIUM" justification="Graphics.TEXT_JUSTIFY_LEFT" color="Graphics.COLOR_BLUE" />
-    <label id="StepLabel" x="125" y="200" font="Graphics.FONT_SYSTEM_TINY" justification="Graphics.TEXT_JUSTIFY_RIGHT" color="Graphics.COLOR_BLUE" />
-    <label id="FloorLabel" x="140" y="200" font="Graphics.FONT_SYSTEM_TINY" justification="Graphics.TEXT_JUSTIFY_LEFT" color="Graphics.COLOR_BLUE" />
+    <label id="TimeLabel" x="center" y="center" font="Graphics.FONT_NUMBER_THAI_HOT" justification="Graphics.TEXT_JUSTIFY_CENTER" color="#179c1e" />
+    <label id="DateLabel" x="center" y="65" font="Graphics.FONT_SYSTEM_TINY" justification="Graphics.TEXT_JUSTIFY_CENTER" color="#179c1e" />
+    <label id="StepCountLabel" x="125" y="165" font="Graphics.FONT_SYSTEM_MEDIUM" justification="Graphics.TEXT_JUSTIFY_RIGHT" color="#179c1e" />
+    <label id="RhrLabel" x="150" y="165" font="Graphics.FONT_SYSTEM_MEDIUM" justification="Graphics.TEXT_JUSTIFY_LEFT" color="#179c1e" />
+    <label id="StepLabel" x="125" y="200" font="Graphics.FONT_SYSTEM_TINY" justification="Graphics.TEXT_JUSTIFY_RIGHT" color="#179c1e" />
+    <label id="ActivityLabel" x="150" y="200" font="Graphics.FONT_SYSTEM_TINY" justification="Graphics.TEXT_JUSTIFY_LEFT" color="#179c1e" />
 </layout>

@@ -53,29 +53,27 @@ class BigCleanFaceView extends WatchUi.WatchFace {
         var dateView = View.findDrawableById("DateLabel") as Text;
         dateView.setText(dateString);
 
-        //var steps = ActivityMonitor.getInfo().steps;
-        var steps = 10000;
-        var floors = ActivityMonitor.getInfo().floorsClimbed;
+        var steps = ActivityMonitor.getInfo().steps;
+        //var floors = ActivityMonitor.getInfo().floorsClimbed;
+        var rhr = UserProfile.getProfile().restingHeartRate;
 
         var stepCountView = View.findDrawableById("StepCountLabel") as Text;
         var stepCountString = Lang.format("$1$", [steps.format("%02d")]);
         stepCountView.setText(stepCountString);
 
-        var floorCountView = View.findDrawableById("FloorCountLabel") as Text;
-        var floorCountString = Lang.format("$1$", [floors]);
-        floorCountView.setText(floorCountString);
+        var rhrView = View.findDrawableById("RhrLabel") as Text;
+        var rhrString = Lang.format("$1$", [rhr]);
+        rhrView.setText(rhrString);
 
         var stepView = View.findDrawableById("StepLabel") as Text;
         var stepString = Lang.format("$1$", ["STEPS"]);
         stepView.setText(stepString);
 
-        var floorView = View.findDrawableById("FloorLabel") as Text;
-        var floorString = Lang.format("$1$", ["FLOORS"]);
-        floorView.setText(floorString);
+        var activityView = View.findDrawableById("ActivityLabel") as Text;
+        var activityString = Lang.format("$1$", ["RHR"]);
+        activityView.setText(activityString);
 
-        var profile = UserProfile.getUserActivityHistory().next();
-
-        System.println(profile);
+        //var profile = UserProfile.getUserActivityHistory().next();
 
 
         // Call the parent onUpdate function to redraw the layout
